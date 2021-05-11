@@ -6,16 +6,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
+import { FormularioComponent } from './formulario/formulario.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
     // AppRoutingModule,
     BrowserAnimationsModule,
-    MatMenuModule
+    MatMenuModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
