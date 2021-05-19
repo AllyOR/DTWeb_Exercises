@@ -8,11 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
 import { FormularioComponent } from './formulario/formulario.component';
 import {FormsModule} from "@angular/forms";
+import { ListaComponent } from './lista/lista.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormularioComponent
+    FormularioComponent,
+    ListaComponent
   ],
   imports: [
     BrowserModule,

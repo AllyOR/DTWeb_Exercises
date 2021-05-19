@@ -1,7 +1,10 @@
 <!--<h3 [hidden] = 'propertyBinding'>{{interpolationBinding}}</h3>&ndash;&gt;-->
 
 <div class="container justify-content-center py-5">
-  <h3 [style.color] = 'propertyBinding'>{{interpolationBinding}}</h3>
+<!--  <h3 [style.color] = 'propertyBinding'>{{interpolationBinding}}</h3>-->
+<!--  <h3 [style.color] = 'propertyBinding' [class.alert-success]="oculto">{{interpolationBinding}}</h3>-->
+  <h3 [style.color] = 'propertyBinding' [ngClass]="oculto ? 'hidden' : 'aquamarine'">{{interpolationBinding}}</h3>
+
   <div class="row">
     <div class="col-12 col-sm-10 col-md-10 col-lg-10">
       <form>

@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
-  styleUrls: ['./formulario.component.css']
+  styleUrls: ['./formulario.component.css'],
+  // encapsulation: ViewEncapsulation.None
 })
 export class FormularioComponent implements OnInit {
 
   interpolationBinding = 'Componente formulario';
   propertyBinding = 'blue';
+  oculto=false;
 
 
   newEmail = {
@@ -23,6 +25,7 @@ export class FormularioComponent implements OnInit {
 
   enviar($event : any){
     console.log($event);
+    this.oculto = !this.oculto;
   }
 
 }

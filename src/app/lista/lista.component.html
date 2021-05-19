@@ -1,0 +1,36 @@
+<p *ngIf="oculto">lista works!</p>
+<ul class="list-group">
+<!--  <li class="list-group-item">An item</li>-->
+<!--  <li class="list-group-item">A second item</li>-->
+<!--  <li class="list-group-item">A thirth item</li>-->
+<!--  <li class="list-group-item">A fourth item</li>-->
+<!--  <li class="list-group-item">And a fifth one</li>-->
+  <li class="list-group-item" *ngFor="let item of lista">{{item.titulo}} {{item.descripcion}}</li>
+</ul>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h4 style="margin-top: 2rem">ejemplo [ngSwitch]</h4>
+    </div>
+  </div>
+</div>
+<div class="container py-2">
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label>Introduce un numero</label>
+        <input class="input-group" [(ngModel)]="numero">
+      </div>
+
+      <ul class="list-group" [ngSwitch]="numero">
+        <li class="list-group-item" *ngSwitchCase="1">Numero 1</li>
+        <li class="list-group-item" *ngSwitchCase="2">Numero 2</li>
+        <li class="list-group-item" *ngSwitchCase="3">Numero 3</li>
+        <li class="list-group-item" *ngSwitchCase="4">Numero 4</li>
+        <li class="list-group-item" *ngSwitchDefault>Escoge un numero</li>
+      </ul>
+    </div>
+  </div>
+</div>
